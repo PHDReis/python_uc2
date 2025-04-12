@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 - Imagens</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family:'Arial', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #0b3675, #c3cfe2);
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #e69011;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        p {
+            color:#12e0e7;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        img.w800 {
+            width:800px;    
+        }
+        img.w300 {
+            width:300px;
+        }
+        img.h800 {
+            height: 800px;
+        }
+
+        figure {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+            border: 5px dotted #e69011;    
+        }
+
+        .caixa {
+            background-color: #000000;
+            border: 3px dashed #ffffff;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+
+        }
+
+        img.w300_redonda {
+            width: 300px;
+            height: auto;
+            clip-path: circle(50%);
+
+        }
+        
+        img.w100_redonda {
+            width: 500px;
+            height: auto;
+            clip-path: circle(42%);
+
+        }
+
+        img.wmax {
+            max-width: 100%;
+            height: auto;
+
+        }
+    </style>
+<!-- Em border, dá pra usar tbm, dashed e solid pra mudar o estilo da borda da img-->    
+</head>
+<body>
+    <!-- Elemento HEADER --> 
+    <header>
+        <h1>Aula 02 - Imagens - Parte 01</h1>
+    </header>
+
+    <!-- Elemento MAIN - Área principal da página -->
+    <main>
+
+        <section id="section1">
+            <h2>Seção 1: Introdução</h2>
+
+            <p>Esta é a primeira seção da página. </br>
+                Aqui você pode adicioar informações introdutórias.</p>
+
+            <div class="caixa">
+                Conteúdo formatado
+            </div>    
+        </section>
+
+        <section id="section1">
+            <h1>Imagem Original</h1>
+            <img src = "img/paisagem-original.jpg"
+                alt="Por do Sol"
+                width="800px">
+        </section>
+
+
+        <section id="section2">
+            <h1>Imagem com 800px de largura</h1>
+            <img src = "img/paisagem-original.jpg"
+                alt="Por do Sol"
+                class="w800">
+        </section>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+                alt="Por do sol"
+                class="h800">
+            <figcaption>
+                Paisagem - Imagem original
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+                alt="Por do sol"
+                class="w300_redonda">
+            <figcaption>
+                Paisagem - Imagem original
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+                alt="Por do sol"
+                class="w100_redonda">
+            <figcaption>
+                Paisagem - Imagem original
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+                alt="Por do sol"
+                class="wmax">
+            <figcaption>
+                Paisagem - Imagem original
+            </figcaption>
+        </figure>
+
+    </main>
+
+    <!-- Elemento FOOTER - Roda-pé da página --> 
+    <footer id="footer">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
